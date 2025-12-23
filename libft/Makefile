@@ -6,7 +6,7 @@
 #    By: mzouhir <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/18 18:29:25 by mzouhir           #+#    #+#              #
-#    Updated: 2025/12/15 15:11:58 by mzouhir          ###   ########.fr        #
+#    Updated: 2025/12/23 14:12:17 by mzouhir          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ SRCS = 	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c 
 		ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c \
 		ft_toupper.c ft_printadd.c ft_printf.c ft_printhex.c ft_printmajhex.c ft_putchar.c ft_putnbr.c ft_putstr.c \
 		ft_putunbr.c ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c ft_lstdelone_bonus.c \
-		ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c ft_atol.c
+		ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c ft_atol.c \
+		ft_atod.c
 
 OBJS = ${SRCS:.c=.o}
 NAME=libft.a

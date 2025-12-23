@@ -6,12 +6,12 @@
 #    By: mzouhir <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/17 18:36:18 by mzouhir           #+#    #+#              #
-#    Updated: 2025/12/23 11:24:02 by mzouhir          ###   ########.fr        #
+#    Updated: 2025/12/23 15:38:14 by mzouhir          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fractol
-SRCS = main.c create_window.c parsing.c create_fractal.c math_utils.c events.c
+SRCS = main.c create_window.c parsing.c create_fractal.c math_utils.c events.c create_julia.c
 OBJS = ${SRCS:.c=.o}
 CC = cc
 CFLAGS = -Wall -Werror -Wextra

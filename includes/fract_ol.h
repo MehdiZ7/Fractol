@@ -6,7 +6,7 @@
 /*   By: mzouhir <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 18:36:51 by mzouhir           #+#    #+#             */
-/*   Updated: 2025/12/23 13:18:40 by mzouhir          ###   ########.fr       */
+/*   Updated: 2025/12/23 15:47:26 by mzouhir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ typedef struct s_mlx_data
 	double	shift_y;
 	double	zoom;
 	int		iteration;
+	double	julia_x;
+	double	julia_y;
 }	t_mlx_data;
 
 typedef struct s_complex
@@ -74,6 +76,7 @@ void		events_init(t_mlx_data *data);
 
 //calculating the fractal
 void		fractal_calcul(t_mlx_data *data);
+void		fractal_calcul_julia(t_mlx_data *data);
 
 //math utils
 double		scaled_map(double unscaled, double new_min, double new_max, double old_max);

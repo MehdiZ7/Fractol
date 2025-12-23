@@ -6,7 +6,7 @@
 /*   By: mzouhir <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 11:23:36 by mzouhir           #+#    #+#             */
-/*   Updated: 2025/12/23 13:29:32 by mzouhir          ###   ########.fr       */
+/*   Updated: 2025/12/23 16:04:01 by mzouhir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,17 @@ int	key_handle(int keysym, t_mlx_data *data)
 	else if (keysym == XK_plus || keysym == XK_Page_Up)
 		data->iteration += 10;
 	else if (keysym == XK_Left)
-		data->shift_x += 0.2;
+		data->shift_x -= (0.5 * data->zoom);
 	else if (keysym == XK_Right)
-		data->shift_x -= 0.2;
+		data->shift_x += (0.5 * data->zoom);
 	else if (keysym == XK_Up)
-		data->shift_y -= 0.2;
+		data->shift_y += (0.5 * data->zoom);
 	else if (keysym == XK_Down)
-		data->shift_y += 0.2;
-	fractal_calcul(data);
+		data->shift_y -= (0.5 * data->zoom);
+	if (!ft_strncmp(data->name, "mandelbrot", 10))
+		fractal_calcul(data);
+	if (!ft_strncmp(data->name, "julia", 5))
+		fractal_calcul_julia(data);
 	return (0);
 }
 
@@ -46,11 +49,14 @@ int	mouse_handle(int button, int x, int y, t_mlx_data *data)
 {
 	(void)x;
 	(void)y;
-	if (button == Button5)
+	if (button == Button4)
 		data->zoom *= 0.95;
-	else if (button == Button4)
+	else if (button == Button5)
 		data->zoom *= 1.05;
-	fractal_calcul(data);
+	if (!ft_strncmp(data->name, "mandelbrot", 10))
+		fractal_calcul(data);
+	if (!ft_strncmp(data->name, "julia", 5))
+		fractal_calcul_julia(data);
 	return (0);
 }
 
