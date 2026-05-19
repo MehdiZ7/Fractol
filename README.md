@@ -42,7 +42,7 @@ A graphical project exploring the fascinating world of fractals, created as part
 Clone the repository and compile the project using the `make` command:
 
 ```bash
-git clone <your_github_link> fractol
+git clone git@github.com:MehdiZ7/Fractol.git fractol
 cd fractol
 make
 ```
