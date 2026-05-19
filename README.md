@@ -14,10 +14,10 @@ A graphical project exploring the fascinating world of fractals, created as part
 ![Mandelbrot Screenshot](https://upload.wikimedia.org/wikipedia/commons/2/21/Mandel_zoom_00_mandelbrot_set.jpg)
 
 ### Julia
-![Julia Screenshot]([https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Julia_set_%28ice%29.png/320px-Julia_set_%28ice%29.png](https://fr.wikipedia.org/wiki/Ensemble_de_Julia#/media/Fichier:Julia_set_(highres_01).jpg))
+![Julia Screenshot](julia1.jpg)
 
 ### Burning Ship
-![Burning Ship Screenshot]([https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Burning_Ship_Fractal.png/320px-Burning_Ship_Fractal.png](https://c1.staticflickr.com/3/2378/32923636492_319b2096bc_o.png))
+![Burning Ship Screenshot](burningshipscreen.png)
 
 ## ✨ Features
 
