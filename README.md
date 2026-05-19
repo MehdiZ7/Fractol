@@ -8,10 +8,8 @@ A graphical project exploring the fascinating world of fractals, created as part
 
 ## 🖼️ Gallery (Screenshots)
 
-*Note: Replace the image links with your own screenshots hosted on GitHub or in an `assets/` folder.*
-
 ### Mandelbrot
-![Mandelbrot Screenshot](https://upload.wikimedia.org/wikipedia/commons/2/21/Mandel_zoom_00_mandelbrot_set.jpg)
+![Mandelbrot Screenshot](mandelbrotscreen.jpg)
 
 ### Julia
 ![Julia Screenshot](julia1.jpg)
